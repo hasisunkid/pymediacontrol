@@ -1,0 +1,17 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}This is an example page{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-fixed-top">
+  <!-- ... -->
+</div>
+{% endblock %}
+
+{% block content %}
+<h1>Shairport</h1>
+
+<img src="{{ url_for('static', filename='coverart.jpg') }}"  class="center-block" />
+<h2>Tietel  :{{ meta['name'] }}</h2>
+<h2>Album   :{{ meta['album'] }}</h2>
+<h2>Künstler:{{ meta['interpret'] }}</h2>
+{% endblock %}

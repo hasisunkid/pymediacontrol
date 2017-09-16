@@ -1,0 +1,5 @@
+from mediacontrol import log,app
+
+@app.route("/")
+def index():
+    log.info('request')
